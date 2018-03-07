@@ -1,0 +1,73 @@
+\documentclass[11pt, conference, compsocconf]{IEEEtran}
+
+\ifCLASSINFOpdf
+ \usepackage[pdftex]{graphicx}
+ \graphicspath{{SupportFiles}}
+ \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+\fi
+\usepackage[cmex10]{amsmath}
+
+\usepackage{setspace}
+\usepackage{url}
+%\onehalfspacing
+%\doublespacing
+%\setstretch{1.5}
+
+%\usepackage[margin=1in]{geometry}
+
+\begin{document}
+\title{A Novel Metric for Evaluation of the Performance of Parallel Processors}
+
+\author{\IEEEauthorblockN{Nahim Adnan}
+\IEEEauthorblockA{Graduate Student\\
+Department of Computer Science\\
+University of Texas at San Antonio\\
+nahimadnan@gmail.com}
+
+
+}
+
+\maketitle
+\thispagestyle{plain}
+\pagestyle{plain}
+
+\begin{abstract}
+There are many metrics have been proposed so far for the evaluation of the performance of the parallel algorithm running on a parallel processor. In this paper, we propose a new metric Serial Fraction, it reveals some of the facts which could not be achieved by traditional well known metrics such as elapsed time, price/performance, speed up, efficiency etc. Our proposed new metric aims at defining a new methodology to analyze the computational performances of parallel applications. Five experimental scenarios have been presented on Floyd shortest path algorithm running as parallel application with different number of nodes; showing that serial fraction could be an effective means for performance evaluation.
+
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+Parallel processor performance, Serial Fraction, Parallel computing, Parallel algorithms, Amdahl's law
+
+\end{IEEEkeywords}
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+%======================================================
+\input{termintro}
+%\input{02related}
+%\input{03methodology}
+%\input{04results}
+
+%\section{Conclusions}
+%\section*{Acknowledgment}
+\IEEEtriggeratref{8}
+
+\bibliographystyle{IEEEtran}
+\bibliography{termbib}
+
+\end{document}
+
+

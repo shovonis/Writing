@@ -1,0 +1,7 @@
+@INPROCEEDINGS{Mucci99papi:a,
+    author = {Philip J. Mucci and Shirley Browne and Christine Deane and George Ho},
+    title = {PAPI: A Portable Interface to Hardware Performance Counters},
+    booktitle = {In Proceedings of the Department of Defense HPCMP Users Group Conference},
+    year = {1999},
+    pages = {7--10}
+}

@@ -1,0 +1,68 @@
+\documentclass[10pt, conference, compsocconf]{IEEEtran}
+
+\ifCLASSINFOpdf
+ \usepackage[pdftex]{graphicx}
+ \graphicspath{{SupportFiles}}
+ \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+\fi
+\usepackage[cmex10]{amsmath}
+\usepackage{lipsum}
+
+
+\begin{document}
+\title{Minimizing Faulty Executions of Distributed Systems}
+
+\author{\IEEEauthorblockN{Nahim Adnan}
+\IEEEauthorblockA{Graduate Student\\
+Department of Computer Science\\
+University of Texas at San Antonio\\
+nahimadnan@gmail.com}
+
+
+}
+
+\maketitle
+\thispagestyle{plain}
+\pagestyle{plain}
+
+\begin{abstract}
+In distributed systems, when developers trace a bug they need to go through a large sequence of events that triggered the bug. When troubleshooting these bugs, developers typically start by manually separating out events that are responsible for triggering the bug (signal) from those that are extraneous (noise). In this paper, a tool DEMi is proposed for automatically performing this minimization. DEMi has been applied to buggy executions of two
+very different distributed systems, Raft and Spark, and find that it achieves almost 80\%-98\% reduction on the overall length of the event sequence that produced the bugs.
+
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+DEMi, Distributed Systems, Event Minimization, Execution Minimizer
+
+\end{IEEEkeywords}
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+%======================================================
+\input{demiintro}
+%\input{02related}
+%\input{03methodology}
+%\input{04results}
+
+%\section{Conclusions}
+%\section*{Acknowledgment}
+\IEEEtriggeratref{8}
+
+\bibliographystyle{IEEEtran}
+\bibliography{demibib}
+
+\end{document}
+
+

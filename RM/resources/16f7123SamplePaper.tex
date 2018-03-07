@@ -1,0 +1,65 @@
+\documentclass[10pt, conference, compsocconf]{IEEEtran}
+
+\ifCLASSINFOpdf
+ \usepackage[pdftex]{graphicx}
+ \graphicspath{{SupportFiles}}
+ \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+\fi
+\usepackage[cmex10]{amsmath}
+
+\begin{document}
+\title{A Survey on Automated Software Repair}
+
+\author{\IEEEauthorblockN{Rifatul Islam}
+\IEEEauthorblockA{Graduate Teaching Assistant\\
+Department of Computer Science\\
+University of Texas at San Antonio\\
+rifatul.islam@utsa.edu}
+
+
+}
+
+\maketitle
+\thispagestyle{plain}
+\pagestyle{plain}
+
+\begin{abstract}
+This paper presents an insightful analysis of some of the state-of-the-arts in the field of frequent pattern mining over uncertain databases. The two directions of the uncertainty model have been studied deeply. Three well known algorithms U-Apriori, UH-mine and PUF-Growth have been analyzed in the expected support based framework. Another framework is probabilistic support in which computation is the main challenge. More three algorithms PFPM(Probabilistic Frequent Itemset Mining), DC(Divide and Conquer based Mining) and ProFp-Growth are presented along with their different probabilistic support computation scheme. In comparative analysis, the computational cost, memory requirement along with the architectural overview of the algorithms have been presented. The performance of the mentioned algorithms is studied with different uncertain database parameters. Finally, some future research directions are identified to proceed in this area. This survey on the uncertain frequent pattern mining enable a novice researcher to understand the basic uncertainty model and design methodology of the existing algorithms.
+
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+Uncertain Data Mining, Frequent Pattern Mining
+
+\end{IEEEkeywords}
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+%======================================================
+\input{intro}
+%\input{02related}
+%\input{03methodology}
+%\input{04results}
+
+%\section{Conclusions}
+%\section*{Acknowledgment}
+\IEEEtriggeratref{8}
+
+\bibliographystyle{IEEEtran}
+\bibliography{bib1}
+
+\end{document}
+
+
